@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  default_config:
+      build: bench
+      container_name: default_config
+      environment:
+        - LIBRARIES=angular react express gulp grunt
+        - PROJECTS=https://github.com/react-boilerplate/react-boilerplate https://github.com/angular/angular-seed https://github.com/christianalfoni/webpack-express-boilerplate
+  #just_library_angular:
+  #  build: bench
+  #  container_name: just_library_angular
+  #  environment:
+  #    - LIBRARIES=angular
+  #    - PROJECTS=
+  #just_project_reactboilerplate:
+  #  build: bench
+  #  container_name: just_project_reactboilerplate
+  #  environment:
+  #    - LIBRARIES=
+  #    - PROJECTS=https://github.com/react-boilerplate/react-boilerplate
